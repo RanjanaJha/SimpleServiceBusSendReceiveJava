@@ -1,0 +1,6 @@
+Microservice	Expected behavior	Integrations
+Search	Stores all the flight connections for a source and destination	SQL DB
+ 	Each flight connection gets a flightId	 
+Fares	Stores fares for flight Id for a particular date	SQL DB
+Booking	For every booking made, the booking request is sent to the queue through the UI or a frontend microservice / Postman	Service Bus
+ 	The booking service reads the queue and processes the booking	 
